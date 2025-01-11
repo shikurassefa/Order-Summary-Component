@@ -20,17 +20,27 @@ body{
     font-style: normal;
     font-size: 16px;
     background-color: var(--pale-Blue);
+   
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     display: grid;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+  }
+  @media (max-width: 375px) {
+    body {
+      background-image: url('images/pattern-background-mobile.svg');
+    }
+   
   }
   .card 
   {
     background-color: white;
     border-radius: 1.5rem;
     margin: 2rem;
-    /* width: 295px; */
+    width: 480px;
   }
   
   div .hero-img
